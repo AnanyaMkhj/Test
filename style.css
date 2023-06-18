@@ -1,0 +1,53 @@
+.hero { 	
+    background-color: yellow;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+.hero:after {
+    border-right: solid 100px transparent;
+    border-left: solid 100px transparent;
+    border-top: solid 50px yellow;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 50%;
+    height: 0;
+    width: 0;
+  }
+
+ .base0{
+    background-color: red;
+    height: 550px;
+    width: 100%;
+  }
+
+ .circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1250px;
+    align-items: center;
+  }
+
+ img{
+    height: 90px;
+    width: 90px;
+    opacity: 0.5;
+  }
+
+p{
+    color: white;
+    font-size: 50px;
+  }
+
+hr{
+    background-color: brown;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
